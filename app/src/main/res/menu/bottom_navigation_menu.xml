@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bar_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_iconColor="@color/bottom"/>
+    <item
+        android:id="@+id/bar_favorite"
+        android:icon="@drawable/ic_favorites"
+        android:title="Favorito"
+        app:cnb_iconColor="@color/bottom"/>
+    <item
+        android:id="@+id/bar_settings"
+        android:icon="@drawable/ic_menu"
+        android:title="Ajuste"
+        app:cnb_iconColor="@color/bottom" />
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "468105653562",
+    "firebase_url": "https://neurafruit-default-rtdb.firebaseio.com",
+    "project_id": "neurafruit",
+    "storage_bucket": "neurafruit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468105653562:android:f2945b36197f63800eb403",
+        "android_client_info": {
+          "package_name": "com.ximoli.neurafruit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468105653562-lcn0ajmf771b5qgpsa688567gda1ic6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ximoli.neurafruit",
+            "certificate_hash": "e42b9da1c99758b45298c9ea992141803099e3eb"
+          }
+        },
+        {
+          "client_id": "468105653562-6tnttjb030eg6k038cpbk41rrgjj3mtp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKzv0PQt_NavbE-7PwDNFtSN3N_gEgu1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468105653562-6tnttjb030eg6k038cpbk41rrgjj3mtp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

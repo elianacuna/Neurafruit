@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".fragment.SettingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/barRl">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/InfoProfileRl">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/profileIv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#1877F2"
+                android:layout_toEndOf="@id/profileIv"
+                android:layout_marginStart="10dp"
+                android:id="@+id/nameTxt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profileIv"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/nameTxt"
+                android:id="@+id/dateTxt"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/stroke"
+            android:layout_below="@id/InfoProfileRl"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_edit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/editBtn"/>
+
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/barRl"
+        android:id="@+id/radioG">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl1">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tema_claro"
+                    android:id="@+id/dayIv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Claro"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/dayIv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/dayTv"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dayTv"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/dayRb"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/rl1"
+                android:layout_marginStart="10dp"
+                android:id="@+id/Rl2">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tema_oscuro"
+                    android:id="@+id/darkIv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oscuro"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/darkIv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/darkTv"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/darkTv"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/darkRb"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Rl2"
+                android:layout_marginStart="10dp"
+                android:id="@+id/Rl3">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tema_sistema"
+                    android:id="@+id/systemIv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sistema"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/systemIv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/systemTv"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/systemTv"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/systemRb"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/bottom_secondary"
+        android:text="Cerrar sesión"
+        android:textAllCaps="false"
+        android:layout_below="@+id/radioG"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/bottom_secondary_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signBtn"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".NoInternetActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/internet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/gif"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin conexión a Internet"
+        android:layout_below="@id/gif"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por favor revise su conexion a internet \ne intenta de nuevo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/textDescription"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textDescription"
+        android:layout_marginTop="50dp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/bottom"
+        android:textColor="@color/bottom_text"
+        android:text="Reintentar"
+        android:textAllCaps="false"
+        android:id="@+id/retryBtn"/>
+
+</RelativeLayout>

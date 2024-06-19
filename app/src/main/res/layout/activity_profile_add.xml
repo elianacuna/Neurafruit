@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user.ProfileAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/barRl">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logoIv"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/stroke"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/logoIv"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barRl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige tu avatar"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:id="@+id/avatarRl"
+            >
+
+            <!-- ImageView 1 -->
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/profile_1" />
+
+            <!-- ImageView 2 -->
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/image1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/profile_2" />
+
+            <!-- ImageView 3 -->
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/image2"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/profile_3" />
+
+            <!-- ImageView 4 -->
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/image1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/profile_4" />
+
+            <!-- ImageView 5 -->
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/image2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/image4"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/profile_5" />
+
+            <!-- ImageView 6 -->
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/image3"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/image5"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:onClick="onImageClick"
+                android:src="@drawable/profile_6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/stroke"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/image6"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatarRl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elige tu nombre de usuario"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/title2"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/title2"
+                android:hint="Nombre de usuario"
+                android:id="@+id/nameIl"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/nameIl"
+                android:layout_marginTop="30dp"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/bottom"
+                android:textColor="@color/bottom_text"
+                android:textAllCaps="false"
+                android:text="Guardar"
+                android:id="@+id/saveBtn"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

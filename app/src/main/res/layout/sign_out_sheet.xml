@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:background="#D9D9D9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/view1"/>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/view1">
+        
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="162.50dp"
+            android:layout_height="60dp"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/bottom_secondary"
+            android:textStyle="bold"
+            android:text="Cancelar"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_alignParentStart="true"
+            android:id="@+id/cancelBtn"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="162.50dp"
+            android:layout_height="60dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            app:strokeColor="#C1C1C1"
+            app:strokeWidth="1dp"
+            android:layout_alignParentEnd="true"
+            app:cornerRadius="10dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="Cerrar sesión"
+            android:textStyle="bold"
+            android:textColor="@color/error"
+            android:id="@+id/signBtn"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

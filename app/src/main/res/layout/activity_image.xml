@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".user.ImageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/rounded_bottom_left_rigth"
+        android:id="@+id/relative">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/backIv"
+            android:src="@drawable/ic_back_android"
+            />
+
+        <ImageView
+            android:id="@+id/imageFruit"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/imageFruit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/progressBar"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_save"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/saveIV"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_saved"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:visibility="gone"
+            android:id="@+id/savedIV"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/nameFruit" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/infoRl"
+        android:layout_below="@+id/nameFruit">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_info"
+            android:id="@+id/infoIv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información"
+            android:layout_toEndOf="@id/infoIv"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoIv"
+            android:layout_marginTop="20dp"
+            android:id="@+id/info1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Familia:"
+                android:id="@+id/familyTxt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order:"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/familyTxt"
+                android:id="@+id/orderTxt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genus:"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/orderTxt"
+                android:id="@+id/genusTxt" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoRl"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_nutrition"
+            android:id="@+id/nutritionIv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutrición"
+            android:layout_toEndOf="@id/nutritionIv"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nutritionIv"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#0FDF94"
+                    android:id="@+id/cardView1"
+                    android:layout_marginEnd="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/caloriesTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/caloriesTxt"
+                            android:layout_centerHorizontal="true"
+                            android:text="Calorías"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#0F62DF"
+                    android:layout_toEndOf="@+id/cardView1"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/cardView2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/fatTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fatTxt"
+                            android:layout_centerHorizontal="true"
+                            android:text="Fat"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#DF730F"
+                    android:layout_toEndOf="@+id/cardView2"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/cardView3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/sugarTxt" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sugarTxt"
+                            android:layout_centerHorizontal="true"
+                            android:text="Azucar"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:backgroundTint="#DF990F"
+                    android:layout_toEndOf="@+id/cardView3"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/cardView4">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/carbohydratesTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/carbohydratesTxt"
+                            android:layout_centerHorizontal="true"
+                            android:text="Carbohidratos"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>

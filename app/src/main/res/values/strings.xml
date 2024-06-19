@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Neurafruit</string>
+    <string name="title_terms">Aceptas las condiciones y \n políticas de Nuerafruit</string>
+    <string name="termino">
+        Al tocar <b>Acepto</b>, aceptas crear una cuenta y los <b>Términos</b>, <b>Política de Privacidad</b> y <b>Política de Cookies</b> de Nuerafruit.\n\nLa <b>Política de privacidad</b> describe las formas en que podemos utilizar la información que recopilamos cuando crea una cuenta. Por ejemplo, utilizamos esta información para proporcionar, personalizar y mejorar nuestros productos, incluidos los anuncios.\n\nTambién recibirá nuestros correos electrónicos y podrá cancelar su suscripción en cualquier momento.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">468105653562-6tnttjb030eg6k038cpbk41rrgjj3mtp.apps.googleusercontent.com</string>
+
+
+</resources>

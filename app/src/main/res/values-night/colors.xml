@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_200">#68A5F3</color>
+    <color name="blue_500">#1877F2</color>
+    <color name="blue_700">#033A81</color>
+
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+
+    <!-- UI Design -->
+    <color name="background">#121316</color>
+    <color name="stroke">#433F3F</color>
+    <color name="bottom_sheet">#1D1F24</color>
+    <color name="background_others">#262626</color>
+    <color name="stroke_others">#606060</color>
+    <color name="error">#FF8A8A</color>
+    <color name="color_icon">#F5F5F5</color>
+
+    <!-- UI Design Bottom -->
+    <color name="bottom">#033A81</color>
+    <color name="bottom_text">#68A5F3</color>
+    <color name="bottom_secondary">#1E1F22</color>
+    <color name="bottom_secondary_text">#B4B4B4</color>
+
+</resources>

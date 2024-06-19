@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".fragment.FavoriteFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/barRl">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:id="@+id/InfoProfileRl">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/profileIv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#1877F2"
+                android:layout_toEndOf="@id/profileIv"
+                android:layout_marginStart="10dp"
+                android:id="@+id/nameTxt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profileIv"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/nameTxt"
+                android:id="@+id/dateTxt"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/stroke"
+            android:layout_below="@id/InfoProfileRl"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/barRl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/bottom_sheet"
+        android:drawableStart="@drawable/ic_search"
+        android:padding="10dp"
+        android:drawableTint="@color/color_icon"
+        android:hint="Buscar"
+        android:textColorHint="@color/color_icon"
+        android:id="@+id/searchEt"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/searchEt"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fruitRv"
+        tools:listitem="@layout/row_fruit_favorite"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+
+</RelativeLayout>
